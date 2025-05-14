@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PORTOFOLIO</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <div class="about-content">
+        <div class="about-text">
+        <h2><span>Portfolio</span><br>backend developer</h2>
+        <p class="name"><strong>→ Muhammad Azhar Pratama</strong></p>
+        <p>I am a Programmer who has experience in data management in the field of backend developers for various projects. With a high spirit of learning and a desire to continue to grow, I am open to new opportunities that can improve my skills and make real contributions in the field of technology.</p>
+        </div>
+        <div class="about-photo">
+        <img src="images/profile.jpg" alt="Foto Profile">
+        </div>
+    </div>
+    </section>
+
+
+  <section id="projects" class="grid-section">
+    <h2>Personal Projects</h2>
+    <div class="grid-container">
+        <div class="card" onclick="showModal('project1')">
+        <img src="images/MD5.png" alt="Project 1">
+        <p>Password Generator MD5</p>
+        </div>
+        <div class="card" onclick="showModal('project2')">
+        <img src="images/Sha1.png" alt="Project 2">
+        <p>Password Generator SHA1</p>
+        </div>
+        <div class="card" onclick="showModal('project3')">
+        <img src="images/Toko.png" alt="Project 3">
+        <p>Toko Buku Aa</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="certificates" class="grid-section">
+    <h2>Certificates</h2>
+    <div class="grid-container">
+        <div class="card" onclick="showModal('sertifikat1')">
+        <img src="images/S_AI.png" alt="Sertifikat 1">
+        <p>ARTIFICIAL INTELLIGENCE</p>
+        </div>
+        <div class="card" onclick="showModal('sertifikat2')">
+        <img src="images/pkl.png" alt="Sertifikat 2">
+        <p>PKL Starcore.CO</p>
+        </div>
+        <div class="card" onclick="showModal('sertifikat3')">
+        <img src="images/Cyberlabs.png" alt="Sertifikat 3">
+        <p>Cyberlabs</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Modal HTML -->
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+    </div>
+
+  <footer>
+    <p>&copy; 2025 Portofolio Saya</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
